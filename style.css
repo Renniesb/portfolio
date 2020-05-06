@@ -122,10 +122,19 @@ html {
 }
 
 .site-button {
- border-radius: 5px;
- color: wheat;
- background-color: #334c4c;
- margin-right: 5px;
+    border-radius: 5px;
+    color: wheat;
+    background-color: #334c4c;
+    margin-right: 5px;
+    background-origin: padding-box;
+    border: .5px solid #ddd;
+    text-decoration: none;
+    text-decoration: none;
+    border: .5px solid #ddd;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    padding-left: 10px;
+    padding-right: 10px;
  }
 
 .project {
@@ -220,8 +229,6 @@ html {
     }
 
     .site-button {
-        width: 150px;
-        height: 25px;
         margin-left: 15px;
         margin-right: 15px;
         margin: 25px;

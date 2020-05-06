@@ -1,0 +1,228 @@
+body {
+    margin: 0;
+}
+.main {
+    margin: 8px;
+}
+address {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+
+address a {
+    color: wheat;
+    text-decoration: none;
+
+}
+
+address figcaption {
+    font-size: 12;
+}
+
+.about-img img {
+    border-radius: 50%;
+    height: 250px;
+    width: 250px;
+    
+}
+
+.about-text{
+    color: wheat;
+    display: flex;
+    /* width: 626; */
+}
+.description {
+    color: wheat;
+}
+.contact {
+    display: flex;
+    flex-direction: column;
+}
+
+.contact .icon {
+    font-size: 90;
+}
+
+header .subtitle {
+    margin-bottom: 90px;
+}
+
+header h2 {
+    color: #cdf9b2;
+    font-size: 25;
+    
+}
+.contact h2{
+    margin-top: 40;
+}
+
+h1 {
+    font-weight: 900;
+    font-size: 4em;
+    line-height: 0.7;
+    letter-spacing: -4px;
+    padding-top: 20px;
+    margin-bottom: 0;
+    color: #20d0ad;
+    background: -webkit-linear-gradient(#95e757, #5bcbcd );
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+html {
+    background-color: #0e0e1b;
+}
+.icon {
+    text-align: center;
+    font-size: 40px;
+    color: wheat;
+}
+
+.screenshot-sizing {
+    height: 250px;
+    width: 250px;
+}
+
+.subtitle {
+    margin-top: 10;
+    margin-left: 5;
+    color: white;
+}
+
+
+.technologies {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.technology{
+    min-width: 56px;
+    display: flex;
+    flex-direction: column;
+}
+
+.technology figcaption {
+    text-align: center;
+    color: white;
+}
+.jquery-icon {
+    height: 40.67px;
+}
+
+.site-button {
+ border-radius: 5px;
+ color: wheat;
+ background-color: #334c4c;
+ margin-right: 5px;
+ }
+.project-links {
+    margin-top: 40px;
+}
+.project {
+    margin-top: 50px;
+}
+
+/* The navigation bar */
+.navbar {
+    display: flex;
+    justify-content: center;
+    overflow: hidden;
+    background-color: #18344f;
+    position: fixed; /* Set the navbar to fixed position */
+    top: 0; /* Position the navbar at the top of the page */
+    width: 100%; /* Full width */
+  }
+  
+  /* Links inside the navbar */
+  .navbar a {
+    float: left;
+    display: block;
+    color: #f2f2f2;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+  }
+  
+  /* Change background on mouse-over */
+  .navbar a:hover {
+    background: #ddd;
+    color: black;
+  }
+
+  footer {
+    color: #18344f
+  }
+  
+  /* Main content */
+  /* .main { */
+    /* margin-top: 30px;  */
+    /* Add a top margin to avoid content overlay */
+  /* } */
+@media screen and (max-width: 600px) {
+    address figcaption {
+        font-size: 2.4vw;
+    }
+    .contact .icon {
+        font-size: 55;
+    }
+    .screenshot {
+        display: flex;
+        justify-content: center;
+    }
+}
+
+
+
+@media screen and (min-width: 850px) {
+
+    .project-info {
+        grid-template-rows: 20px 300px;
+        display: grid;
+        /* align-items: center; */
+        grid-template-areas:
+            'scshot title'
+            '.desc';
+    }
+    .project-info .subtitle {
+        grid-area: title;
+    }
+    .screenshot {
+        grid-area: scshot;
+    }
+    .project .description {
+        grid-area: desc;
+    }
+    .projects header {
+    text-align: center;
+    }
+
+
+    .about{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .about h2 {
+        margin-bottom: 30px;
+    }
+
+    .about-img {
+        text-align: center;
+    }
+    .about-text p {
+        width: 50vw;
+        line-height: 25px;
+    }
+    address {
+        justify-content: center;
+    }
+    .contact .subtitle {
+        margin-bottom: 40px;
+    }
+    .contact header {
+        text-align: center;
+    }
+}

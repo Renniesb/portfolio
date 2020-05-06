@@ -160,7 +160,11 @@ html {
   }
 
   footer {
-    color: #18344f
+    color: wheat;
+  }
+
+  footer a {
+      color: cornflowerblue;
   }
   
   /* Main content */

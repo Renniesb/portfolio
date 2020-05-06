@@ -1,4 +1,8 @@
+html {
+  scroll-behavior: smooth;
+}
 body {
+    font-family: 'News Cycle', sans-serif;
     margin: 0;
 }
 .main {
@@ -7,6 +11,12 @@ body {
 address {
     display: flex;
     flex-wrap: wrap;
+}
+
+
+.description {
+    color: wheat;
+    line-height: 2;
 }
 
 
@@ -32,9 +42,7 @@ address figcaption {
     display: flex;
     /* width: 626; */
 }
-.description {
-    color: wheat;
-}
+
 .contact {
     display: flex;
     flex-direction: column;
@@ -42,6 +50,8 @@ address figcaption {
 
 .contact .icon {
     font-size: 90;
+    display: flex;
+    justify-content: center;
 }
 
 header .subtitle {
@@ -51,7 +61,6 @@ header .subtitle {
 header h2 {
     color: #cdf9b2;
     font-size: 25;
-    
 }
 .contact h2{
     margin-top: 40;
@@ -59,9 +68,10 @@ header h2 {
 
 h1 {
     font-weight: 900;
+    height: 95;
     font-size: 4em;
     line-height: 0.7;
-    letter-spacing: -4px;
+    letter-spacing: -5px;
     padding-top: 20px;
     margin-bottom: 0;
     color: #20d0ad;
@@ -94,6 +104,7 @@ html {
 .technologies {
     display: flex;
     flex-wrap: wrap;
+    align-content: stretch;
 }
 
 .technology{
@@ -116,9 +127,7 @@ html {
  background-color: #334c4c;
  margin-right: 5px;
  }
-.project-links {
-    margin-top: 40px;
-}
+
 .project {
     margin-top: 50px;
 }
@@ -160,41 +169,112 @@ html {
     /* Add a top margin to avoid content overlay */
   /* } */
 @media screen and (max-width: 600px) {
+
+    h1{
+        line-height: .8;
+        height: 104px;
+    }
+
+    .contact header .subtitle {
+        margin-top: 5px;
+    }
+
+    .main {
+        margin: 8px
+    }
     address figcaption {
         font-size: 2.4vw;
     }
     .contact .icon {
         font-size: 55;
     }
+    
     .screenshot {
         display: flex;
         justify-content: center;
+    }
+    .project-links {
+        margin-top: 10px;
     }
 }
 
 
 
-@media screen and (min-width: 850px) {
+@media screen and (min-width: 929px) {
+
+    .project-links {
+        margin-top: 40px;
+        align-items: center;
+        display: flex;
+        justify-content: center;
+    }
+
+    .description {
+        color: wheat;
+        width: 20vw;
+        line-height: 1.5;
+    }
+
+    .site-button {
+        width: 150px;
+        height: 25px;
+        margin-left: 15px;
+        margin-right: 15px;
+        margin: 25px;
+    }
+
+
+    h3.subtitle {
+        margin-top: 0;
+    }
+
+    .project figure, .project figcaption {
+        margin: 0
+    }
+    .project icon {
+        font-size: 50px;
+    }
 
     .project-info {
+        /* width: 60vw; */
         grid-template-rows: 20px 300px;
         display: grid;
         /* align-items: center; */
+        grid-column-gap: 20px;
         grid-template-areas:
-            'scshot title'
-            '.desc';
+            '.title'
+            'scshot desc';
+        margin-top: 80px;
     }
-    .project-info .subtitle {
+    .project-info h3.subtitle {
         grid-area: title;
     }
     .screenshot {
         grid-area: scshot;
+        justify-self: end;
     }
     .project .description {
         grid-area: desc;
     }
     .projects header {
     text-align: center;
+    }
+
+    .tech-stack {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .technologies {
+        display: grid;
+        grid-row-gap: 20px;
+        margin-top: 30px;
+        grid-template-columns: 15vw 15vw 15vw 15vw;
+        grid-template-rows: 60px;
+    }
+
+    .technology {
+        justify-content: flex-end;
     }
 
 
@@ -206,7 +286,7 @@ html {
     }
 
     .about h2 {
-        margin-bottom: 30px;
+        margin-bottom: 10px;
     }
 
     .about-img {
@@ -220,7 +300,8 @@ html {
         justify-content: center;
     }
     .contact .subtitle {
-        margin-bottom: 40px;
+        margin-bottom: 15px;
+        margin-top: 2;
     }
     .contact header {
         text-align: center;

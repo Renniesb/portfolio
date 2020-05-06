@@ -4,11 +4,12 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Rennie Bevineau Portfolio</title>
     <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=News+Cycle:wght@700&display=swap" rel="stylesheet">
 </head>
 <body>
     <div class="navbar">
-        <a href="#home">About</a>
-        <a href="#news">Portfolio</a>
+        <a href="#about">About</a>
+        <a href="#portfolio">Portfolio</a>
         <a href="#contact">Contact</a>
     </div>
     <div class="main">
@@ -18,7 +19,7 @@
                 <p class="subtitle">Full Stack [Node, Javascript]</p>
             </header>        
         </section>
-        <section class="about">
+        <section id="about"class="about">
             <header>
                 <h2>About</h2>
             </header>
@@ -38,196 +39,209 @@
         </section>
         <section class="projects">
             <header>
-                <h2>Portfolio</h2>   
+                <h2 id="portfolio">Portfolio</h2>   
             </header>
             <article class="project">
                 
                 <div class="project-info">
-                    <div class="project-title">
+
                         <h3 class="subtitle">FilmoPedia</h3>
-                    </div>
+
+                     
                     <figure class="screenshot">
                         <img class="screenshot-sizing" src="img/filmopedia.png" alt="filmopedia app screenshot">
                     </figure>
                     <p class="description">FilmoPedia is for movie lover's. It was built to find out what movie is best for the user to see. An application to search for detailed movie information and information about movies from the top 50 movies list.</p>
                 </div>
-            
-                <h3 class="subtitle">Technologies Used</h3>
-                <div class="technologies">
-                <figure class="technology">
-                    <div class="icon">
-                        <i class="fab fa-html5"></i>
+                <div class="tech-stack">
+                    <h3 class="subtitle">Technologies Used</h3>
+                    <div class="technologies">
+                    <figure class="technology">
+                        <div class="icon">
+                            <i class="fab fa-html5"></i>
+                        </div>
+                        <figcaption>
+                            <small>HTML5</small>
+                        </figcaption>
+                    </figure>
+                
+                    <figure class="technology">
+                        <div class="icon">
+                            <i class="fab fa-css3-alt"></i>
+                        </div>
+                        <figcaption>
+                            <small>CSS3</small>
+                        </figcaption>
+                    </figure>
+    
+                    <figure class="technology">
+                        <div class="icon">
+                            <i class="fab fa-js-square"></i>
+                        </div>
+                        <figcaption>
+                            <small>JavaScript</small>
+                        </figcaption>
+                    </figure>
+    
+                    <figure class="technology">
+                        <div class="icon">
+                            <img class="jquery-icon" src="img/icons8-jquery-50.png"/>
+                        </div>
+                        <figcaption>
+                            <small>JQuery</small>
+                        </figcaption>
+                    </figure>
+                    <figure class="technology">
+                        <div class="icon">
+                            <i class="fas fa-sync-alt"></i>
+                        </div>
+                        <figcaption>
+                            <small>Ajax</small>
+                        </figcaption>
+                    </figure>         
                     </div>
-                    <figcaption>
-                        <small>HTML5</small>
-                    </figcaption>
-                </figure>
-            
-                <figure class="technology">
-                    <div class="icon">
-                        <i class="fab fa-css3-alt"></i>
+                    <div class="project-links">
+                        <button href="https://github.com/Renniesb/filmopedia" target="_blank" class="site-button">Github Repo</button>
+                        <button href="https://renniesb.github.io/filmopedia/" target="_blank" class="site-button">Live Site</button>
                     </div>
-                    <figcaption>
-                        <small>CSS3</small>
-                    </figcaption>
-                </figure>
-
-                <figure class="technology">
-                    <div class="icon">
-                        <i class="fab fa-js-square"></i>
-                    </div>
-                    <figcaption>
-                        <small>JavaScript</small>
-                    </figcaption>
-                </figure>
-
-                <figure class="technology">
-                    <div class="icon">
-                        <img class="jquery-icon" src="img/icons8-jquery-50.png"/>
-                    </div>
-                    <figcaption>
-                        <small>JQuery</small>
-                    </figcaption>
-                </figure>
-                <figure class="technology">
-                    <div class="icon">
-                        <i class="fas fa-sync-alt"></i>
-                    </div>
-                    <figcaption>
-                        <small>Ajax</small>
-                    </figcaption>
-                </figure>         
-                </div>
-                <div class="project-links">
-                    <button class="site-button">Github Link</button>
-                    <button class="site-button">Live Site</button>
+                    
                 </div>
             </article>
-            <article class="project">
-            <h3 class="subtitle">Salsa Quiz App</h3>
-            <figure class="screenshot">
-                <img class="screenshot-sizing" src="img/salsa_quiz.png" alt="salsa quiz app screenshot">
-            </figure>
-            <p class="description">The Salsa Quiz App is for salsa dance enthusiasts. It was built as a fun trivia for users to test there knowledge of salsa dance. This app asks questions about salsa dance style and history and gives users feedback on the questions they get right and wrong and the percentage that they achieve.</p>
-            <h3 class="subtitle">Technologies Used</h3>
-            <div class="technologies">
-                <figure class="technology">
-                    <div class="icon">
-                        <i class="fab fa-html5"></i>
-                    </div>
-                    <figcaption>
-                        <small>HTML5</small>
-                    </figcaption>
-                </figure>
             
-                <figure class="technology">
-                    <div class="icon">
-                        <i class="fab fa-css3-alt"></i>
-                    </div>
-                    <figcaption>
-                        <small>CSS3</small>
-                    </figcaption>
-                </figure>
+            <article class="project">
+                <div class="project-info">
 
-                <figure class="technology">
-                    <div class="icon">
-                        <i class="fab fa-js-square"></i>
+                    <h3 class="subtitle">Salsa Quiz App</h3>
+                    <figure class="screenshot">
+                        <img class="screenshot-sizing" src="img/salsa_quiz.png" alt="salsa quiz app screenshot">
+                    </figure>
+                    <p class="description">The Salsa Quiz App is for salsa dance enthusiasts. It was built as a fun trivia for users to test there knowledge of salsa dance. This app asks questions about salsa dance style and history and gives users feedback on the questions they get right and wrong and the percentage that they achieve.</p>
+                </div>
+            <div class="tech-stack">
+                    <h3 class="subtitle">Technologies Used</h3>
+                    <div class="technologies">
+                        <figure class="technology">
+                            <div class="icon">
+                                <i class="fab fa-html5"></i>
+                            </div>
+                            <figcaption>
+                                <small>HTML5</small>
+                            </figcaption>
+                        </figure>
+                    
+                        <figure class="technology">
+                            <div class="icon">
+                                <i class="fab fa-css3-alt"></i>
+                            </div>
+                            <figcaption>
+                                <small>CSS3</small>
+                            </figcaption>
+                        </figure>
+    
+                        <figure class="technology">
+                            <div class="icon">
+                                <i class="fab fa-js-square"></i>
+                            </div>
+                            <figcaption>
+                                <small>JavaScript</small>
+                            </figcaption>
+                        </figure>
+    
+                        <figure class="technology">
+                            <div class="icon">
+                                <img class="jquery-icon" src="img/icons8-jquery-50.png"/>
+                            </div>
+                            <figcaption>
+                                <small>JQuery</small>
+                            </figcaption>
+                        </figure>
                     </div>
-                    <figcaption>
-                        <small>JavaScript</small>
-                    </figcaption>
-                </figure>
-
-                <figure class="technology">
-                    <div class="icon">
-                        <img class="jquery-icon" src="img/icons8-jquery-50.png"/>
-                    </div>
-                    <figcaption>
-                        <small>JQuery</small>
-                    </figcaption>
-                </figure>
-            </div>
-            <div class="project-links">
-                <button class="site-button">Github Link</button>
-                <button class="site-button">Live Site</button>
+                <div class="project-links">
+                    <button href="https://github.com/Renniesb/salsa-quiz-app" target="_blank" class="site-button">Github Repo</button>
+                    <button href="https://renniesb.github.io/salsa-quiz-app/" target="_blank" class="site-button">Live Site</button>
+                </div>
             </div>
             </article>
             <article class="project">
-                <h3 class="subtitle">FlashCards App</h3>
-                <figure class="screenshot">
-                    <img class="screenshot-sizing" src="img/flashcards.png" alt="flashcards screenshot">
-                </figure>
-                <p class="description">FlashCards App is for students. It was built to quickly learn and study a list of terms and definitions. It features an intuitive interface that allows users to study, edit, add and delete flashcards and decks along with a unique Flashcard flip animation triggered upon pressing the flip card button.</p>
-                <h3 class="subtitle">Technologies Used</h3>
-                <div class="technologies">
-                <figure class="technology">
-                    <div class="icon">
-                        <i class="fab fa-html5"></i>
-                    </div>
-                    <figcaption>
-                        <small>HTML5</small>
-                    </figcaption>
-                </figure>
-            
-                <figure class="technology">
-                    <div class="icon">
-                        <i class="fab fa-css3-alt"></i>
-                    </div>
-                    <figcaption>
-                        <small>CSS3</small>
-                    </figcaption>
-                </figure>
-
-                <figure class="technology">
-                    <div class="icon">
-                        <i class="fab fa-react"></i>
-                    </div>
-                    <figcaption>
-                        <small>React.js</small>
-                    </figcaption>
-                </figure>
-
-                <figure class="technology">
-                    <div class="icon">
-                        <i class="fab fa-js-square"></i>
-                    </div>
-                    <figcaption>
-                        <small>JavaScript</small>
-                    </figcaption>
-                </figure>
-
+                <div class="project-info">
+                    <h3 class="subtitle">FlashCards App</h3>
+                    <figure class="screenshot">
+                        <img class="screenshot-sizing" src="img/flashcards.png" alt="flashcards screenshot">
+                    </figure>
+                    <p class="description">FlashCards App is for students. It was built to quickly learn and study a list of terms and definitions. It features an intuitive interface that allows users to study, edit, add and delete flashcards and decks along with a unique Flashcard flip animation triggered upon pressing the flip card button.</p>
                 </div>
-                <div class="project-links">
-                    <button class="site-button">Github Link</button>
-                    <button class="site-button">Live Site</button>
+                <div class="tech-stack">
+                    <h3 class="subtitle">Technologies Used</h3>
+                    <div class="technologies">
+                        <figure class="technology">
+                            <div class="icon">
+                                <i class="fab fa-html5"></i>
+                            </div>
+                            <figcaption>
+                                <small>HTML5</small>
+                            </figcaption>
+                        </figure>
+                    
+                        <figure class="technology">
+                            <div class="icon">
+                                <i class="fab fa-css3-alt"></i>
+                            </div>
+                            <figcaption>
+                                <small>CSS3</small>
+                            </figcaption>
+                        </figure>
+    
+                        <figure class="technology">
+                            <div class="icon">
+                                <i class="fab fa-react"></i>
+                            </div>
+                            <figcaption>
+                                <small>React.js</small>
+                            </figcaption>
+                        </figure>
+    
+                        <figure class="technology">
+                            <div class="icon">
+                                <i class="fab fa-js-square"></i>
+                            </div>
+                            <figcaption>
+                                <small>JavaScript</small>
+                            </figcaption>
+                        </figure>
+    
+                    </div>
+                    <div class="project-links">
+                        <button href="https://github.com/Renniesb/flashcards" target="_blank" class="site-button">Github Repo</button>
+                        <button href="https://renniesb.github.io/flashcards/" target="_blank" class="site-button">Live Site</button>
+                    </div>
                 </div>
             </article>        
         </section>
-        <section class="contact">
+        <section id="contact" class="contact">
             <header>
                 <h2>Contact</h2>
             </header>
             <address>
                 <figure class="contact">
-                    <div class="icon">
-                        <i href="mailto:rsbevineau@gmail.com" target="_blank" class="fas fa-envelope"></i>
-                    </div>
+                    <a href="mailto:rsbevineau@gmail.com" target="_blank" class="icon">
+                        <i class="fas fa-envelope"></i>
+                    </a>
                     <figcaption>
                         <a href="mailto:rsbevineau@gmail.com" target="_blank">rsbevineau@gmail.com</a>
                     </figcaption>
                 </figure>             
                 <figure>
-                    <div class="icon">
-                        <i href="https://github.com/Renniesb" target="_blank" class="fab fa-github"></i>
-                    </div>
+                    <a href="https://github.com/Renniesb" target="_blank" class="icon">
+                        <i class="fab fa-github"></i>
+                    </a>
                     <figcaption>
                         <a href="https://github.com/Renniesb" target="_blank">github.com/Renniesb</a>
                     </figcaption>
                 </figure>
                 <figure>
-                    <div class="icon">
-                        <i href="https://www.linkedin.com/in/renniesb" target="_blank" class="fab fa-linkedin"></i>
-                    </div>
+                    <a href="https://www.linkedin.com/in/renniesb" target="_blank" class="icon">
+                        <i class="fab fa-linkedin"></i>
+                    </a>
                     <figcaption>
                         <a href="https://www.linkedin.com/in/renniesb" target="_blank">linkedin.com/in/renniesb</a>
                     </figcaption>               

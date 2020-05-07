@@ -116,7 +116,7 @@ h1 {
 .technologies {
     display: flex;
     flex-wrap: wrap;
-    align-content: stretch;
+    justify-content: center;
 }
 
 .technology{

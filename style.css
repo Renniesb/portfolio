@@ -245,6 +245,13 @@ navbar {
         margin-top: 0;
         text-align: center;
     }
+    .project-links {
+        justify-content: center;
+    }
+    .site-button {
+        margin: 20px;
+    }
+
 }
 
 

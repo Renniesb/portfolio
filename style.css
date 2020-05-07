@@ -4,15 +4,26 @@ html {
 body {
     font-family: 'News Cycle', sans-serif;
     margin: 0;
+    background-color: #0e0e1b;
 }
-.main {
+
+main {
     margin: 8px;
 }
+
+.about-img {
+    text-align: center;
+}
+
 address {
     display: flex;
     flex-wrap: wrap;
 }
 
+.contact .subtitle {
+    margin-bottom: 90px;
+    margin-top: 0;
+}
 
 .description {
     color: wheat;
@@ -27,7 +38,7 @@ address a {
 }
 
 address figcaption {
-    font-size: 12;
+    font-size: 12px;
 }
 
 .about-img img {
@@ -49,26 +60,22 @@ address figcaption {
 }
 
 .contact .icon {
-    font-size: 90;
     display: flex;
     justify-content: center;
 }
 
-header .subtitle {
-    margin-bottom: 90px;
-}
 
 header h2 {
     color: #cdf9b2;
-    font-size: 25;
+    font-size: 25px;
 }
 .contact h2{
-    margin-top: 40;
+    margin-top: 40px;
 }
 
 h1 {
     font-weight: 900;
-    height: 95;
+    height: 96px;
     font-size: 4em;
     line-height: 0.7;
     letter-spacing: -5px;
@@ -80,9 +87,6 @@ h1 {
     -webkit-text-fill-color: transparent;
 }
 
-html {
-    background-color: #0e0e1b;
-}
 .icon {
     text-align: center;
     font-size: 40px;
@@ -95,8 +99,8 @@ html {
 }
 
 .subtitle {
-    margin-top: 10;
-    margin-left: 5;
+    margin-top: 10px;
+    margin-left: 5px;
     color: white;
 }
 
@@ -142,7 +146,7 @@ html {
 }
 
 /* The navigation bar */
-.navbar {
+navbar {
     display: flex;
     justify-content: center;
     overflow: hidden;
@@ -153,7 +157,7 @@ html {
   }
   
   /* Links inside the navbar */
-  .navbar a {
+  navbar a {
     float: left;
     display: block;
     color: #f2f2f2;
@@ -163,7 +167,7 @@ html {
   }
   
   /* Change background on mouse-over */
-  .navbar a:hover {
+  navbar a:hover {
     background: #ddd;
     color: black;
   }
@@ -176,13 +180,9 @@ html {
       color: cornflowerblue;
   }
   
-  /* Main content */
-  /* .main { */
-    /* margin-top: 30px;  */
-    /* Add a top margin to avoid content overlay */
-  /* } */
-@media screen and (max-width: 600px) {
 
+@media screen and (min-width: 300px) {
+    
     h1{
         line-height: .8;
         height: 104px;
@@ -192,14 +192,14 @@ html {
         margin-top: 5px;
     }
 
-    .main {
+    main {
         margin: 8px
     }
     address figcaption {
         font-size: 2.4vw;
     }
     .contact .icon {
-        font-size: 55;
+        font-size: 55px;
     }
     
     .screenshot {
@@ -210,6 +210,26 @@ html {
         margin-top: 10px;
     }
 }
+
+@media screen and (min-width: 600px) {
+    .about h2 {
+        text-align: center;
+    }
+    address figcaption {
+        font-size: 12px;
+    }
+    .contact header {
+        text-align: center;
+    }
+    .contact .icon {
+        font-size: 90px;
+    }
+    .contact .subtitle {
+        margin-bottom: 15px;
+        margin-top: 0;
+    }
+}
+
 
 
 
@@ -245,10 +265,8 @@ html {
     }
 
     .project-info {
-        /* width: 60vw; */
         grid-template-rows: 20px 300px;
         display: grid;
-        /* align-items: center; */
         grid-column-gap: 20px;
         grid-template-areas:
             '.title'
@@ -295,12 +313,10 @@ html {
     }
 
     .about h2 {
-        margin-bottom: 10px;
+        text-align: center;
+        margin-bottom: 26px;
     }
 
-    .about-img {
-        text-align: center;
-    }
     .about-text p {
         width: 50vw;
         line-height: 25px;
@@ -308,11 +324,5 @@ html {
     address {
         justify-content: center;
     }
-    .contact .subtitle {
-        margin-bottom: 15px;
-        margin-top: 2;
-    }
-    .contact header {
-        text-align: center;
-    }
+
 }

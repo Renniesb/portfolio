@@ -22,6 +22,7 @@ main {
 
 address {
     display: flex;
+    justify-content: center;
     flex-wrap: wrap;
 }
 
@@ -207,16 +208,18 @@ navbar {
         margin: 8px
     }
     address figcaption {
-        font-size: 2.4vw;
+        font-size: 1.1vw;
     }
     .contact .icon {
-        font-size: 55px;
+        font-size: 10vw;
     }
     
     .screenshot {
         display: flex;
         justify-content: center;
     }
+
+
     .project-links {
         margin-top: 10px;
         /* text-align: center; */
@@ -264,6 +267,10 @@ navbar {
         align-items: center;
         display: flex;
         justify-content: center;
+    }
+
+    .project-info .subtitle {
+        text-align: left;
     }
 
     .description {

@@ -1,364 +1,43 @@
-html {
-  scroll-behavior: smooth;
-}
-body {
-    font-family: 'News Cycle', sans-serif;
-    margin: 0;
-    background-color: #0e0e1b;
-}
-
-.about h2 {
-    text-align: center;
-
-}
-
-main {
-    margin: 8px;
-}
-
-.about-img {
-    text-align: center;
-}
-
-address {
-    display: flex;
-    justify-content: center;
-    flex-wrap: wrap;
-}
-
-.contact .subtitle {
-    margin-bottom: 90px;
-    margin-top: 0;
-    text-align: left;
-}
-
-.description {
-    color: wheat;
-    line-height: 2;
-}
-
-
-address a {
-    color: wheat;
-    text-decoration: none;
-
-}
-
-address figcaption {
-    font-size: 12px;
-}
-
-.about-img img {
-    border-radius: 50%;
-    height: 250px;
-    width: 250px;
-    
-}
-
-.about-text{
-    color: wheat;
-    display: flex;
-    /* width: 626; */
-}
-
-.contact {
-    display: flex;
-    flex-direction: column;
-}
-
-.contact .icon {
-    display: flex;
-    justify-content: center;
-}
-
-
-header h2 {
-    color: #cdf9b2;
-    font-size: 25px;
-}
-.contact h2{
-    margin-top: 40px;
-    text-align: center;
-}
-
-h1 {
-    font-weight: 900;
-    height: 96px;
-    font-size: 4em;
-    line-height: 0.7;
-    letter-spacing: -5px;
-    padding-top: 20px;
-    margin-bottom: 0;
-    color: #20d0ad;
-    background: -webkit-linear-gradient(#95e757, #5bcbcd );
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-}
-
-.icon {
-    text-align: center;
-    font-size: 40px;
-    color: wheat;
-}
-
-.screenshot-sizing {
-    height: 250px;
-    width: 250px;
-}
-
-.subtitle {
-    margin-top: 10px;
-    margin-left: 5px;
-    color: white;
-    text-align: center;
-}
-
-
-.technologies {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-}
-
-.technology{
-    min-width: 56px;
-    display: flex;
-    flex-direction: column;
-}
-
-.technology figcaption {
-    text-align: center;
-    color: white;
-}
-.jquery-icon {
-    height: 40.67px;
-}
-
-.site-button {
-    border-radius: 5px;
-    color: wheat;
-    background-color: #334c4c;
-    background-origin: padding-box;
-    border: .5px solid #ddd;
-    text-decoration: none;
-    text-decoration: none;
-    border: .5px solid #ddd;
-    padding-top: 5px;
-    padding-bottom: 5px;
-    padding-left: 10px;
-    padding-right: 10px;
- }
-
-.project {
-    margin-top: 50px;
-    /* justify-content: center; */
-    /* text-align: center; */
-}
-
-/* The navigation bar */
-nav {
-    display: flex;
-    justify-content: center;
-    overflow: hidden;
-    background-color: #18344f;
-    position: fixed; /* Set the navbar to fixed position */
-    top: 0; /* Position the navbar at the top of the page */
-    width: 100%; /* Full width */
+* {
+    box-sizing: border-box;
   }
   
-  /* Links inside the navbar */
-  nav a {
-    float: left;
-    display: block;
-    color: #f2f2f2;
+  body {
+    font-family: "Open Sans",
+    sans-serif; 
+    font-size: 20px;
+    color: #444;
     text-align: center;
-    padding: 14px 16px;
-    text-decoration: none;
+    line-height: 1.5;
   }
   
-  /* Change background on mouse-over */
-  nav a:hover {
-    background: #ddd;
-    color: black;
-  }
-
+  nav,
   footer {
-    color: wheat;
+    padding: 1% 0;
+    background-color: #aaa;
   }
-
-  footer a {
-      color: cornflowerblue;
-  }
-
-  .projects header {
-    text-align: center;
-    }
   
-
-@media screen and (min-width: 300px) {
-    
-    h1{
-        line-height: .8;
-        height: 104px;
-    }
-
-    .contact header .subtitle {
-        margin-top: 5px;
-    }
-
-    main {
-        margin: 8px
-    }
-    address figcaption {
-        font-size: 1.1vw;
-    }
-    .contact .icon {
-        font-size: 10vw;
-    }
-    
-    .screenshot {
-        display: flex;
-        justify-content: center;
-    }
-
-
-    .project-links {
-        margin-top: 10px;
-        margin-bottom: 35px;
-        /* text-align: center; */
-        display: flex;
-        justify-content: space-evenly;
-    }
-}
-
-
-
-@media screen and (min-width: 600px) {
-    .about h2 {
-        text-align: center;
-    }
-    address figcaption {
-        font-size: 12px;
-    }
-    .contact header {
-        text-align: center;
-    }
-    .contact .icon {
-        font-size: 90px;
-    }
-    .contact .subtitle {
-        margin-bottom: 15px;
-        margin-top: 0;
-        text-align: center;
-    }
-    .project-links {
-        justify-content: center;
-        margin-bottom: 50px;
-    }
-    .site-button {
-        margin-right: 50px;
-        /* margin: 20px; */
-    }
-
-}
-
-
-
-
-@media screen and (min-width: 929px) {
-
-    .project-links {
-        margin-top: 8px;
-        align-items: center;
-        display: flex;
-        justify-content: start;
-    }
-
-    .project-info .subtitle {
-        text-align: left;
-    }
-
-    .description {
-        color: wheat;
-        max-width: 268px;
-        margin-bottom: 0;
-        line-height: 1.5;
-    }
-
-    .site-button {
-        margin-right: 10px;
-    }
-
-
-    h3.subtitle {
-        margin-top: 0;
-    }
-
-    .project figure, .project figcaption {
-        margin: 0
-    }
-    .project icon {
-        font-size: 50px;
-    }
-
-    .project-info {
-        grid-template-rows: 20px 300px;
-        grid-template-columns: 250px 268px;
-        display: grid;
-        grid-column-gap: 20px;
-        justify-content: center;
-        grid-template-areas:
-            '.title'
-            'scshot desc';
-        margin-top: 80px;
-    }
-    .project-info h3.subtitle {
-        grid-area: title;
-    }
-    .screenshot {
-        grid-area: scshot;
-        justify-self: end;
-    }
-    .description-box {
-        grid-area: desc;
-    }
-
-    .tech-stack {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-    }
-    .technologies {
-        display: grid;
-        grid-row-gap: 20px;
-        margin-top: 30px;
-        grid-template-columns: 12vw 12vw 12vw 12vw;
-        grid-template-rows: 60px;
-    }
-
-    .technology {
-        justify-content: flex-end;
-    }
-
-
-    .about{
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-    }
-
-    .about h2 {
-        text-align: center;
-        margin-bottom: 26px;
-    }
-
-    .about-text p {
-        width: 50vw;
-        line-height: 25px;
-    }
-    address {
-        justify-content: center;
-    }
-
-}
+  nav {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 10;
+  }
+  
+  
+  
+  header {
+    padding: 12% 0;
+  }
+  
+  section {
+    min-height: 200px;
+    padding: 6% 0;
+    background-color: #bbb;
+  }
+  
+  section:nth-child(even) {
+    background-color: #ddd;
+  }
+  

@@ -1,10 +1,14 @@
 html {
-  scroll-behavior: smooth;
+    scroll-behavior: smooth;
 }
 body {
     font-family: 'News Cycle', sans-serif;
     margin: 0;
     background-color: #0e0e1b;
+}
+
+.contact header {
+    text-align: center;
 }
 
 .about h2 {
@@ -27,9 +31,8 @@ address {
 }
 
 .contact .subtitle {
-    margin-bottom: 90px;
+    margin-bottom: 45px;
     margin-top: 0;
-    text-align: left;
 }
 
 .description {
@@ -147,7 +150,7 @@ h1 {
     padding-bottom: 5px;
     padding-left: 10px;
     padding-right: 10px;
- }
+}
 
 .project {
     margin-top: 50px;
@@ -164,38 +167,41 @@ nav {
     position: fixed; /* Set the navbar to fixed position */
     top: 0; /* Position the navbar at the top of the page */
     width: 100%; /* Full width */
-  }
-  
-  /* Links inside the navbar */
-  nav a {
+}
+
+/* Links inside the navbar */
+nav a {
     float: left;
     display: block;
     color: #f2f2f2;
     text-align: center;
     padding: 14px 16px;
     text-decoration: none;
-  }
-  
-  /* Change background on mouse-over */
-  nav a:hover {
+}
+
+/* Change background on mouse-over */
+nav a:hover {
     background: #ddd;
     color: black;
-  }
+}
 
-  footer {
+footer {
     color: wheat;
-  }
+}
 
-  footer a {
-      color: cornflowerblue;
-  }
+footer a {
+    color: cornflowerblue;
+}
 
-  .projects header {
+.projects header {
     text-align: center;
     }
-  
+
 
 @media screen and (min-width: 300px) {
+    
+    
+
     
     h1{
         line-height: .8;
@@ -240,9 +246,7 @@ nav {
     address figcaption {
         font-size: 12px;
     }
-    .contact header {
-        text-align: center;
-    }
+
     .contact .icon {
         font-size: 90px;
     }

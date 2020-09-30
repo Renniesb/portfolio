@@ -137,6 +137,11 @@ h1 {
     height: 40.67px;
 }
 
+.resume {
+    margin-top: 50px;
+    text-align: center;
+}
+
 .site-button {
     border-radius: 5px;
     color: wheat;
